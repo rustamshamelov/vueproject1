@@ -1,27 +1,29 @@
 <template>
-
   <div class="container">
-  <h1>Hello world</h1>
-  
+    <Header />
   </div>
 </template>
 
 <script>
+import Header from "./components/Header";
 
 export default {
   name: "App",
+  components: {
+    Header,
+  },
 };
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 body {
-  font-family: 'Red Hat Text', sans-serif;
+  font-family: "Red Hat Text", sans-serif;
 }
 .container {
   max-width: 500px;
