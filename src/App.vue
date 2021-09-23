@@ -12,6 +12,33 @@ export default {
   components: {
     Header,
   },
+  data() {
+    return {
+      tasks: [],
+    };
+  },
+  created() {
+    this.tasks = [
+      {
+        id: 1,
+        text: "I was born",
+        day: "June 26th 2002",
+        reminder: true,
+      },
+      {
+        id: 2,
+        text: "U was born",
+        day: "December 16th 2003",
+        reminder: true,
+      },
+      {
+        id: 3,
+        text: "He was born",
+        day: "June 26th 2005",
+        reminder: true,
+      },
+    ];
+  },
 };
 </script>
 
