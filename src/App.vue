@@ -1,17 +1,20 @@
 <template>
   <div class="container">
     <Header title="Track" />
+    <Tasks :tasks="tasks" />
   </div>
 </template>
 
 <script>
 import Header from "./components/Header";
+import Tasks from "./components/Tasks";
 
 export default {
   name: "App",
   components: {
     Header,
-  },
+    Tasks,
+  }, 
   data() {
     return {
       tasks: [],
